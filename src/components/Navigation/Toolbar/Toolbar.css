@@ -1,0 +1,49 @@
+.Toolbar {
+    height: 56px;
+    width: 100%;
+    background-color: #703B09;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    z-index: 90;
+    box-sizing: border-box;
+
+    nav {
+        height: 100%;
+    }
+
+    >.Logo {
+        height: 80%;
+    }
+    
+    .Hamburger {
+        display: none;
+    }
+
+    @media (max-width: 499px) {
+        .DesktopOnly {
+            display: none;
+        }
+
+        .Hamburger {
+            width: 40px;
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-sizing: border-box;
+    
+            div {
+                height: 3px;
+                background-color: white;
+                width: 90%;
+            }
+        }
+    }
+}
+
